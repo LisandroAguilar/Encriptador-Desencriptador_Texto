@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encriptador y Desencriptador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador y Desencriptador</h1>
+        <div class="form-container">
+            <form>
+                <label for="texto-original">Texto Original:</label>
+                <textarea id="texto-original" rows="5"></textarea>
+                <label for="texto-encriptado/desencriptado">Texto Encriptado/Desencriptado:</label>
+                <textarea id="texto-encriptado/desencriptado" rows="5"></textarea>
+                <div class="button-container">
+                    <button type="button" onclick="encriptar()">Encriptar</button>
+                    <button type="button" onclick="desencriptar()">Desencriptar</button>
+                    <button type="button" onclick="limpiar()">Limpiar</button>
+                    <button type="button" onclick="copiar()">Copiar</button>
+                </div>
+                <div id="error-msg"></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
